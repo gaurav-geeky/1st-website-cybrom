@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border ko box ke andar lane k liye */
+}
+
+/* css for head   start */
+
+#head {
+
+    width: 100%;
+    font-size: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    /* horizontal center */
+    align-items: center;
+    /* verticle  center ke liye*/
+    font-family: arial;
+    position: fixed;
+    top: 0%;
+    z-index: 3; 
+}
+
+#head #logo {
+    color: white;
+    font-family: cooper;
+    background: rgb(221, 81, 81);
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding: 0px 5px;
+}
+
+#head nav ul {
+    display: flex;
+    gap: 10%;
+    white-space: nowrap;
+}
+
+#head nav ul li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: black;
+}
+
+#head nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#head p {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#head .tele {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#head .tele p {
+    background-color: rgb(172, 234, 172);
+}
+
+#head .icon {
+    display: flex;
+    gap: 50px;
+}
+
+/* css for head  ends here */
+
+/* home  start */
+#s1 {
+    margin: 40px 0px;
+    background: rgb(172, 234, 172);
+}
+
+#s1 img {
+    width: 100%;
+    height: 90vh;
+}
+
+#s1 p {
+    color: blue;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#s1 .course .sub {
+    border: 3px solid blue;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#s1 .course {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 30px;
+}
+
+/* home end */
+
+/* section 2 start*/
+#s2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#s2 img {
+    border-radius: 60%;
+}
+
+#s3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#s3 img {
+    margin-right: 50px;
+}
+
+#s4 {
+    margin-top: 20px;
+    display: flex;
+    background: white;
+    gap: 30px;
+    font-size: 30px;
+    font-family: 'Courier New';
+    align-items: center;
+}
+
+/* section 2 end*/
+
+/* book style start */
+
+#books1 .kitab {
+    font-size: 30px;
+    font-family: 'sans-serifk';
+    background: burlywood;
+}
+
+#books1 img {
+    width: 100%;
+}
+
+/* book style end */
+
+/* contact start  */
+
+
+
+#contacts1 {
+    background-image: url(call2.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgb(172, 234, 172);
+    padding: 10px 0px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#contacts1 h1 {
+    font-family: "Lucida Console";
+}
+
+iframe {
+    width: 100%;
+}
+
+#formcon form .edu {
+    font-family: 'Courier New';
+    font-size: 20px;
+    width: 100%;
+    margin-left: 200%;
+}
+
+#formcon form {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#formcon {
+    display: flex;
+    background: rgb(172, 234, 172);
+}
+
+#formcon img {
+    border-radius: 50%;
+}
+
+/* contact end  */
+
+/* About us start */
+
+/* about us para 1 start */
+#abouts1 {
+    margin-top: 45px;
+    background-image: url('bgabout.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#abouts1 #para {
+    position: absolute;
+    color: brown;
+    font-size: 35px;
+    font-family: arial;
+    margin: 350px 0px 0px 70px;
+    letter-spacing: 5px; 
+    
+}
+
+/* about us para 1 end     about us para 2 start  */
+#abouts2 p { 
+    text-align: center; 
+    font-family: papyrus;
+    font-weight: bold; 
+    color: darkcyan;  
+    font-size: 40px; 
+    padding-bottom: 10px; 
+}
+#abouts2 #op1  {     
+    display: grid; 
+    grid-template-columns: auto auto auto; 
+    justify-content: space-around;
+    align-items: center; 
+    gap: 20px;
+    text-wrap: wrap; 
+}
+#abouts2 #op1 .op {
+    border: 2px solid red;  
+    height: 270px; 
+    width: 270px; 
+    padding: 2px; 
+    text-align: center; 
+
+}
+#abouts2 {
+    background: lightcyan; 
+    font-size: 25px; 
+    padding: 40px;
+}
+#abouts2 h4 { 
+    text-decoration: sienna underline; 
+}
+/* about us para 2 end    about us para 3 start  */ 
+
+#abouts3 { 
+    margin-top: 40px; 
+    width: 100%; 
+    height: 60vh; 
+    background: lightcyan;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;        /*  here no need*/ 
+    
+}                          
+#abouts3 marquee{
+    position: absolute;
+    top: 200px;
+    z-index: 2 !important;
+
+}
+#abouts3 .text { 
+    /* position: relative;  Default layer (lower z-index) */  /* position: absolute; */
+    text-align: center; 
+    /* top: 90px;  */
+    font-size: 70px; 
+    letter-spacing: 10px; 
+}
+#abouts3 .image {      
+    /* position: absolute;  Positioned relative to .container */  /* left: 40%;   */ /* top: 0%;  */
+    width: 500px; 
+    opacity: .8; 
+    margin-bottom: 70px;
+}
+
+/* about us para 3 end    about us para 4 start  */
+
+#abouts4{
+    width: 100%;
+    height: 60vh; 
+    padding: 40px;
+}
+#abouts4 p, h2 { 
+    /* text-wrap: nowrap;               no need after text align  center        */
+    font-size: 40px;
+    text-align: center;     /*   text ko center */     
+}  
+
+#abouts4 p { 
+    font-style: italic; 
+    font-size: 30px; 
+} 
+#abouts4 .abpic .yo { 
+    text-align: center;    
+} 
+#abouts4 .abpic .yo img { 
+    border-radius: 50%; 
+}
+#abouts4 .abpic { 
+    display: flex; 
+    justify-content: space-evenly; 
+    /* align-items: center;             extra here no need  only with position */      
+    /* width: 100%;                             same as above */
+}
+
+#abouts4 .abpic .yo:hover { 
+       transform: scale(1.09) rotate(360deg); 
+}  
+#abouts4 .abpic .yo { 
+    transition: transform 3s ;
+}
+/* about us para 4 end  about us para 5 start   */
+ 
+#abouts5 { 
+    width: 100%; 
+    height: 60vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+
+}  
+#abouts5 p { 
+    text-align: center;
+    font-size: 50px; 
+    margin-bottom: 30px; 
+    font-family: monospace;
+} 
+#abouts5 #box {
+    width: 400px; 
+    height: 400px;
+    border: 1px solid black;   
+    animation: change 5s ease infinite; 
+}
+
+@keyframes change { 
+    0%{
+        background-image: url('animation/img1.png'); 
+        /* background: lightblue;  */
+    }
+    33%{
+        background-image: url('animation/img2.png'); 
+        /* background: lightgreen; */
+    }
+    66%{
+        background-image: url('animation/img3.png'); 
+        /* background: lightskyblue;  */
+    }
+}
+
+/* about us para 5 end */
