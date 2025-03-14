@@ -149,25 +149,59 @@
     align-items: center;
 }
 
-/* section 2 end*/
-
-/* book style start */
+/* section 2 end  book style start */
 
 #books1 .kitab {
     font-size: 30px;
     font-family: 'sans-serifk';
     background: burlywood;
 }
-
 #books1 img {
-    width: 100%;
+    width: 100%; 
+}
+/* book book book book book book book book book book book book book book book book */
+#books2 { 
+    width: 100%; 
+    height: 70vh; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: lightgoldenrodyellow;
+} 
+#books2 p { 
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    font-family: monospace; 
+    background-color: lightyellow;
+}
+#books2 #bk {
+    height: 500px; 
+    width: 500px; 
+    border: 1px solid pink; 
+    animation: hope 10s ease infinite; 
+} 
+
+@keyframes hope { 
+    0%{
+        background-image: url('books/bk1.jpeg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    25%{
+        background-image: url('books/bk2.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    50%{
+        background-image: url('books/bk3.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    75%{
+        background-image: url('books/bk4.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
 }
 
-/* book style end */
-
-/* contact start  */
-
-
+/* book style end   contact start  */
 
 #contacts1 {
     background-image: url(call2.jpg);
@@ -178,7 +212,8 @@
     background: rgb(172, 234, 172);
     padding: 10px 0px;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 40px; 
+    margin-bottom: 20px; 
 }
 
 #contacts1 h1 {
@@ -191,35 +226,39 @@ iframe {
 
 #formcon form .edu {
     font-family: 'Courier New';
-    font-size: 20px;
-    width: 100%;
+    font-size: 25px;
+    width: 100%; 
+    height: 70%; 
     margin-left: 200%;
 }
-
 #formcon form {
-
-    display: grid;
+    display: grid; 
+    grid-template-columns: auto;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;  
 
+}
 #formcon {
     display: flex;
-    background: rgb(172, 234, 172);
+    background: rgb(150, 233, 150); 
+    width: 100%; 
+    height: 50vh; 
+    margin-top: 20px;
 }
-
-#formcon img {
-    border-radius: 50%;
+#formcon  img { 
+    border-radius: 50%; 
+    display: flex;
+    position: absolute;   
+    left: 7%; 
+    bottom: -15%; 
+    align-items: center;
 }
+/* contact end About us start */
 
-/* contact end  */
-
-/* About us start */
-
-/* about us para 1 start */
 #abouts1 {
     margin-top: 45px;
     background-image: url('bgabout.jpg');
+    opacity: .8;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -270,9 +309,8 @@ iframe {
 }
 #abouts2 h4 { 
     text-decoration: sienna underline; 
-}
+} 
 /* about us para 2 end    about us para 3 start  */ 
-
 #abouts3 { 
     margin-top: 40px; 
     width: 100%; 
