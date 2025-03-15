@@ -25,7 +25,7 @@
 
 #head #logo {
     color: white;
-    font-family: cooper;
+    font-family: 'Cooper Black';
     background: rgb(221, 81, 81);
     font-size: 30px;
     letter-spacing: 5px;
@@ -149,15 +149,35 @@
     align-items: center;
 }
 
-/* section 2 end  book style start */
+/* section 2 end  book style start */ 
+#books0 { 
+    width: 100%; 
+    height: 100vh; 
+    background-image: url('app1.jpg'); 
+    background-repeat: no-repeat; 
+    margin-top: 40px ;    
+} 
 
-#books1 .kitab {
-    font-size: 30px;
+#books0  h3 { 
+    margin: 30vh; 
+    /* text-align: center;  */
+    font-size: 30px; 
+}
+
+#books1 .kitab { 
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+
+    font-size: 25px;
     font-family: 'sans-serifk';
     background: burlywood;
 }
-#books1 img {
-    width: 100%; 
+#books1 .kitab a {
+    text-decoration: none;
+    color: red; 
+    font-size: 30px; 
+    margin: 20px 0px; 
 }
 /* book book book book book book book book book book book book book book book book */
 #books2 { 
@@ -180,7 +200,30 @@
     width: 500px; 
     border: 1px solid pink; 
     animation: hope 10s ease infinite; 
-} 
+}  
+#books3 { 
+    width: 100%; 
+    height: 60vh; 
+    font-size: 30px; 
+}
+#books3 h5 { 
+    text-align: center; 
+    margin: 20px 0px;  
+}
+#books3 #event { 
+    width: 100%; 
+    display: flex; 
+    
+    
+    justify-content: space-evenly;
+}
+
+#books3 #event .org {  
+    width: 250px; 
+    height: 250px; 
+    border: 2px solid red; 
+}
+
 
 @keyframes hope { 
     0%{
@@ -252,7 +295,34 @@ iframe {
     left: 7%; 
     bottom: -15%; 
     align-items: center;
+} 
+#contacts2 { 
+    width: 100%;
+    height: 60vh; 
+    background-image: url('teach/coding.jpeg');
+    opacity: .6;
+} 
+#contacts2 #conpic { 
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    gap: 10%;  
+    position: absolute; 
+    z-index: 2; 
+    left: 10%; 
 }
+#contacts2 #conpic .pic { 
+    height: 350px; 
+    width: 350px;  
+    margin-top: 80px; 
+    font-size: 30px; 
+    opacity: 1; 
+    color: white; 
+}
+#contacts2 #conpic h4 { 
+    color: lightskyblue;
+}
+
 /* contact end About us start */
 
 #abouts1 {
