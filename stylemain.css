@@ -41,10 +41,10 @@
 }
 
 #head nav ul li {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     list-style: none;
-    color: black; 
+    /* color: black;  */
     transition: transform 3s ease-out; 
 } 
 #head nav ul li:hover { 
@@ -91,7 +91,7 @@
     margin-top: 5px; 
 }
 #foot div { 
-    font-size: 22px; 
+    font-size: 18px; 
 
 }
 
@@ -186,14 +186,12 @@
     color: lightskyblue; 
     text-decoration: none; 
     font-family: georgia; 
-     
 }
 #books0  h3 { 
     margin: 30vh; 
     color: white; 
     font-size: 30px; 
 }
-
 #books1 .kitab { 
     display: flex; 
     justify-content: space-evenly;
@@ -209,7 +207,6 @@
     font-size: 30px; 
     margin: 20px 0px; 
 }
-/* book book book book book book book book book book book book book book book book */
 #books2 { 
     width: 100%; 
     height: 70vh; 
@@ -311,16 +308,13 @@
 /* book style end   contact start  */
 
 #contacts1 {
-    background-image: url(call2.jpg);
-    background-repeat: no-repeat;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     background: rgb(172, 234, 172);
     padding: 10px 0px;
     font-size: 20px;
-    margin-top: 40px; 
-    margin-bottom: 20px; 
+    margin: 40px 0px;  
+    width: 100%; 
+    height: 25vh; 
 }
 
 #contacts1 h1 {
@@ -490,18 +484,20 @@ iframe {
     font-style: italic; 
     font-size: 30px; 
 } 
-#abouts4 .abpic .yo { 
-    text-align: center;    
-} 
-#abouts4 .abpic .yo img { 
-    border-radius: 50%; 
-}
+
 #abouts4 .abpic { 
     display: flex; 
     justify-content: space-evenly; 
     /* align-items: center;             extra here no need  only with position */      
     /* width: 100%;                             same as above */
 }
+#abouts4 .abpic .yo { 
+    text-align: center;    
+} 
+#abouts4 .abpic .yo img { 
+    border-radius: 50%; 
+}
+
 
 #abouts4 .abpic .yo:hover { 
        transform: scale(1.09) rotate(360deg); 
@@ -511,7 +507,7 @@ iframe {
 }
 /* about us para 4 end  about us para 5 start   */
  
-#abouts5 { 
+/* #abouts5 { 
     background-image: url('teach/chem.jpg'); 
     background-repeat: no-repeat; 
     width: 100%; 
@@ -530,9 +526,10 @@ iframe {
     width: 50%; 
     border: 1px solid rgb(0, 0, 0);
     margin-left: 20%; 
-    background-size: cover;   /* to make image inside box */
+    background-size: cover;   /* to make image inside box 
     animation: change 10s ease-out infinite;  
-}
+} */
+/*
 @keyframes change { 
 
     0%{
@@ -556,12 +553,125 @@ iframe {
         background-repeat: no-repeat; 
     } 
     40% { 
-        transform: translateX(400px) rotate(20deg); 
+        transform: translateX(200px) rotate(10deg); 
     }
     80% { 
-        transform: translateX(-300px) scale(1.2) rotate(-20deg); 
+        transform: translateX(-150px) scale(1.2) rotate(-10deg); 
     } 
+} */
+/* about us para 5 end */ 
+/* media querry */
+
+@media(max-width: 430px) { 
+    #head { 
+        display: none; 
+    }
+    #head #logo { 
+        display: none; 
+    } 
+    #head nav ul { 
+        display: none; 
+    }
+
+    #head .tele { 
+        display: none; 
+    }
+    #head .icon { 
+        display: none; 
+    } 
+
+    /* bar and checkbox */ 
+    #check:checked~#head nav ul { 
+        display: block; 
+        position: absolute; 
+        top: 2%; 
+        left: 30%; 
+        background: lightcoral; 
+        line-height: 50px;
+        z-index: 10; 
+    }
+    #bar { 
+        display: block; 
+        position: absolute; 
+        top: 2%; 
+        right: 5%; 
+        z-index: 10; 
+        font-size: 20px; 
+        margin-left: 40px; 
+    }
+    /* head end*/
+    #s1 .course { 
+        flex-direction: column;
+    }
+    #s1 img { 
+        height: 40vh; 
+    }
+    #s2 { 
+        flex-direction: column;
+    }  
+    #s2 img { 
+        height: 240px;
+    }
+    #s3 { 
+        flex-direction: column;
+    } 
+    #s4 {
+        flex-direction: column;
+    }
+    /* about media*/
+    #abouts3 .image { 
+        width: 250px; 
+    } 
+    #abouts1, #abouts1 #para { 
+        height: 50vh; 
+        font-size: 20px; 
+        margin-top: 40px; 
+    } 
+    #abouts2 #op1 { 
+        grid-template-columns: auto;
+    } 
+    #abouts4, #abouts4 .abpic {
+        flex-direction: column; 
+        height: 100%;
+    } 
+    /* #abouts5 { 
+        height: 30vh; 
+        margin-bottom: 0px;
+    } 
+    #abouts5 #box { 
+        height: 100%; 
+        width: 100%; 
+    } */ 
+    /* book media */ 
+    #books0 { 
+        height: 100%; 
+    } 
+    
+    #books1 .kitab  { 
+        flex-direction: column;
+    } 
+    #books2 { 
+        height: 100%; 
+    }
+    #books3 #bk { 
+        height: 120%; 
+    }  
+    #contacts1 { 
+        height: 100%;  
+        width: 100%; 
+    } 
+    #formcon { 
+        height: 100%; 
+    }
+    /* #contacts2 {
+        height: 100%; 
+    } */
+
+} 
+
+@media (min-width: 430px) and (max-width: 760px) { 
+
 }
 
-/* about us para 5 end */ 
+
 
