@@ -142,7 +142,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #s2 img {
@@ -609,8 +609,12 @@ iframe {
     #s2 { 
         flex-direction: column;
     }  
+    #s2 .para { 
+        font-size: 15px; 
+        text-align: center;
+    }
     #s2 img { 
-        height: 240px;
+        height: 220px;
     }
     #s3 { 
         flex-direction: column;
