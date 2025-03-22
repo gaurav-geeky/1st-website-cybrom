@@ -243,7 +243,7 @@
         background-image: url('books/bk3.jpg'); 
         backgorund-repeat: no-repeat; 
     }
-    75%{
+    100%{
         background-image: url('books/bk4.jpg'); 
         backgorund-repeat: no-repeat; 
     }
@@ -688,7 +688,7 @@ iframe {
             background-image: url('books/bk3.jpg'); 
             backgorund-repeat: no-repeat; 
         }
-        75%{
+        100%{
             background-image: url('books/bk4.jpg'); 
             backgorund-repeat: no-repeat; 
         }
