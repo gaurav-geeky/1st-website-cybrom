@@ -613,7 +613,8 @@ iframe {
         font-size: 25px; 
     }
     #s2 img { 
-        height: 220px;
+        height: 220px; 
+        width: 350px; 
     }
     #s3 { 
         flex-direction: column;
