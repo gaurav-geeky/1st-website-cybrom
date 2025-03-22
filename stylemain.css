@@ -610,8 +610,7 @@ iframe {
         flex-direction: column;
     }  
     #s2 .para { 
-        font-size: 15px; 
-        text-align: center;
+        font-size: 25px; 
     }
     #s2 img { 
         height: 220px;
@@ -619,6 +618,13 @@ iframe {
     #s3 { 
         flex-direction: column;
     } 
+    #s3 img { 
+        height: 121px; 
+    }
+    #s3 div { 
+        font-size: 20px;
+    }
+
     #s4 {
         flex-direction: column;
     }
