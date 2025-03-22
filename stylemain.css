@@ -179,7 +179,8 @@
     background-repeat: no-repeat; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    margin-top: 40px ;    
+    margin-top: 40px ;  
+      
 } 
 #books0 #func a { 
     font-size: 30px; 
@@ -187,7 +188,7 @@
     text-decoration: none; 
     font-family: georgia; 
 }
-#books0  h3 { 
+#books0 h3 { 
     margin: 30vh; 
     color: white; 
     font-size: 30px; 
@@ -218,19 +219,43 @@
 } 
 #books2 p { 
     font-size: 30px; 
-    margin-bottom: 10px; 
+    text-align: center;
+    margin-bottom: 20px; 
     font-family: monospace; 
     background-color: lightyellow;
 }  
- 
-@keyframes bookie { 
+#books2 #bk {
+    height: 450px; 
+    width: 600px; 
+    border: 1px solid pink; 
+    animation: hope 8s ease infinite; 
+}  
+@keyframes hope { 
+    0%{
+        background-image: url('books/bk1.jpeg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    25%{
+        background-image: url('books/bk2.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    50%{
+        background-image: url('books/bk3.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
+    75%{
+        background-image: url('books/bk4.jpg'); 
+        backgorund-repeat: no-repeat; 
+    }
+
     30%{ 
-        transform: translateX(100px) scale(1.2);
+        transform: translateX(100px) scale(1.01);
     } 
     60%{ 
         transform: translateX(-200px); 
     }
 }
+ 
 #books3 { 
     width: 100%; 
     height: 60vh; 
@@ -272,37 +297,12 @@
     padding: 40px; 
     
 }
-#books2 #bk {
-    height: 450px; 
-    width: 600px; 
-    border: 1px solid pink; 
-    animation: hope 8s ease infinite; 
-}  
-@keyframes hope { 
-    0%{
-        background-image: url('books/bk1.jpeg'); 
-        backgorund-repeat: no-repeat; 
-    }
-    25%{
-        background-image: url('books/bk2.jpg'); 
-        backgorund-repeat: no-repeat; 
-    }
-    50%{
-        background-image: url('books/bk3.jpg'); 
-        backgorund-repeat: no-repeat; 
-    }
-    75%{
-        background-image: url('books/bk4.jpg'); 
-        backgorund-repeat: no-repeat; 
-    }
 
-    30%{ 
-        transform: translateX(200px) scale(1.01);
-    } 
-    60%{ 
-        transform: translateX(-400px); 
-    }
-
+#books0 h3 { 
+    margin: 30vh; 
+    color: white; 
+    font-size: 30px; 
+    width: 50%;
 }
 
 /* book style end   contact start  */
@@ -325,58 +325,48 @@ iframe {
     width: 100%;
 }
 
-#formcon form .edu {
-    font-family: 'Courier New';
-    font-size: 25px;
-    width: 100%; 
-    height: 70%; 
-    margin-left: 200%;
-}
-#formcon form {
-    display: grid; 
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;  
-
-}
 #formcon {
-    display: flex;
+    display: flex; 
+    gap: 10%; 
+    align-items: center; 
+    justify-content: space-evenly;
+
     background: rgb(150, 233, 150); 
     width: 100%; 
     height: 50vh; 
-    margin-top: 20px;
+    margin: 15px 0px;
+}
+
+#formcon form .edu {
+    font-family: 'Courier New';
+    font-size: 20px;
+    width: 120%; 
+    height: 10%; 
+    display: block;  
 }
 #formcon img { 
     border-radius: 50%; 
-    display: flex;
-    position: absolute;   
-    left: 7%; 
-    align-items: center; 
 } 
 #contacts2 { 
     width: 100%;
     height: 60vh; 
     background-image: url('teach/coding.jpeg');
     opacity: .6;
-} 
-#contacts2 #conpic { 
+
+    padding-bottom: 5%;
     display: flex;  
     justify-content: space-evenly;
     align-items: center; 
-    gap: 10%;  
-    position: absolute; 
-    z-index: 2; 
-    left: 5%; 
+    gap: 5%;     
 }
-#contacts2 #conpic .pic { 
+#contacts2  .pic { 
     height: 270px; 
     width: 270px;  
-    margin-top: 80px; 
-    font-size: 30px; 
-    opacity: 1; 
-    color: white; 
+    margin: 15px 0px; 
+    font-size: 25px;  
+    color: white;    
 }
-#contacts2 #conpic h4 { 
+#contacts2 h4 { 
     color: lightskyblue;
 }
 
@@ -560,35 +550,45 @@ iframe {
     } 
 } */
 /* about us para 5 end */ 
-/* media querry */
 
+#check{
+    display: none;
+}
+
+/* media querry */
 @media(max-width: 430px) { 
     #head { 
         display: none; 
     }
     #head #logo { 
-        display: none; 
+        /* display: none;  */
     } 
     #head nav ul { 
-        display: none; 
+        flex-direction: column;
+    
     }
 
     #head .tele { 
-        display: none; 
+        /* display: none;  */            /*  to show it    apply nothing  here   so commented out  */
     }
     #head .icon { 
-        display: none; 
+        /* display: none;  */
     } 
+    #foot { 
+        height: 14vh;
+    }
 
     /* bar and checkbox */ 
-    #check:checked~#head nav ul { 
-        display: block; 
+    #check:checked~#head  { 
+        display: flex; 
+        flex-direction: column;
         position: absolute; 
-        top: 2%; 
-        left: 30%; 
+        top: 5%; 
+        right: 0%; 
         background: lightcoral; 
         line-height: 50px;
         z-index: 10; 
+        width: 44%;
     }
     #bar { 
         display: block; 
@@ -645,33 +645,52 @@ iframe {
     /* book media */ 
     #books0 { 
         height: 100%; 
+        width: 100%;  
+        overflow: hidden;
     } 
-    
+    #books0 h3 { 
+        font-size: 15px;
+    }
+
     #books1 .kitab  { 
         flex-direction: column;
     } 
     #books2 { 
         height: 100%; 
     }
+    #books2 #bk { 
+        height: 180px;
+        width: 250px; 
+    }
     #books3 #bk { 
         height: 120%; 
-    }  
+    } 
+
     #contacts1 { 
-        height: 100%;  
-        width: 100%; 
+        height: 100%; 
     } 
     #formcon { 
         height: 100%; 
+        flex-direction: column; 
+
     }
-    /* #contacts2 {
-        height: 100%; 
-    } */
+    #formcon img { 
+        height: 155px; 
+        width: 225px;
+    }
+    #contacts2 { 
+        height: 100%;
+        flex-direction: column;  
+        
+    } 
+    #contacts2 .pic {  
+        height: 135px; 
+        width: 135px;  
+        
+    }
 
 } 
 
-@media (min-width: 430px) and (max-width: 760px) { 
-
-}
 
 
 
