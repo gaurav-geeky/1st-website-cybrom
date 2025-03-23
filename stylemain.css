@@ -175,12 +175,9 @@
 #books0 { 
     width: 100%; 
     height: 100vh; 
-    background-image: url('teach/bookbg.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    margin-top: 40px ;  
-      
+    background-image: url('teach/bookbg.jpg');   
+    background-size: cover;
+    margin-top: 40px;     
 } 
 #books0 #func a { 
     font-size: 30px; 
@@ -440,7 +437,6 @@ iframe {
     position: absolute;
     top: 200px;
     z-index: 2 !important;
-
 }
 #abouts3 .text { 
     /* position: relative;  Default layer (lower z-index) */  /* position: absolute; */
@@ -604,13 +600,14 @@ iframe {
         flex-direction: column;
     }
     #s1 img { 
-        height: 35vh; 
+        height: 30vh; 
     }
     #s2 { 
         flex-direction: column;
     }  
     #s2 .para { 
-        font-size: 25px; 
+        font-size: 25px;  
+        margin-left: 5%; 
     }
     #s2 img { 
         height: 220px; 
@@ -630,12 +627,25 @@ iframe {
         flex-direction: column;
     }
     /* about media*/
+    #abouts3 { 
+        height: 35vh; 
+        margin: 20px 0px; 
+    }
     #abouts3 .image { 
-        width: 220px; 
+        width: 200px; 
+        margin-bottom: 35px;
     } 
+    #abouts3 .text { 
+        font-size: 35px;    
+    } 
+    #abouts3 marquee{
+        position: absolute;
+        top: 100px;
+       
+    }
     #abouts1, #abouts1 #para { 
         height: 40vh; 
-        font-size: 10px; 
+        font-size: 15px; 
         margin-top: 40px; 
     } 
     #abouts2 #op1 { 
@@ -655,19 +665,29 @@ iframe {
     } */ 
     /* book media */ 
     #books0 { 
-        height: 100%; 
+        height: 35vh; 
         width: 100%;  
-        overflow: hidden;
+        /* overflow: hidden;   */
     } 
-    #books0 h3 { 
-        font-size: 15px;
-    }
+     #books0 #func a { 
+        font-size: 10px; 
+        /* text-align: center;  */
+        position: absolute; 
+        top: 30%; 
+        left: 10%; 
+    } 
+    #books0  h3 { 
+        /* text-align: center;  */
+        font-size: 15px; 
+        margin: 15vh;
+    } 
 
-    #books1 .kitab  { 
-        flex-direction: column;
+    #books1 .kitab a  { 
+        font-size: 14px; 
+        padding: 0px 15px;
     } 
     #books2 { 
-        height: 100%; 
+        height: 100%;  
     }
 
     #books2 #bk {
