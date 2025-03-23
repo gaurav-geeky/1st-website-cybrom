@@ -735,6 +735,9 @@ iframe {
         height: 155px; 
         width: 225px;
     }
+    #formcon form .edu { 
+        width: 100%; 
+    }
     #contacts2  { 
         height: 220vh; 
     }
@@ -742,7 +745,14 @@ iframe {
         height: 100%;
         flex-direction: column;  
     } 
-
+    #contacts2 #box .pic #cy{ 
+        margin-left: 0px;
+        width: 300px;
+        height: 300px; 
+    }
+    #contacts2 #box #ad { 
+        margin: 0px 10%;
+    }
 
 } 
 
