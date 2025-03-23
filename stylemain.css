@@ -291,8 +291,7 @@
     text-align: center; 
     background:rgb(150, 233, 150); 
     font-size: 20px; 
-    padding: 40px; 
-    
+    padding: 40px;  
 }
 
 #books0 h3 { 
@@ -409,7 +408,6 @@ iframe {
     width: 270px; 
     padding: 2px; 
     text-align: center; 
-
 }
 #abouts2 {
     background: lightcyan; 
@@ -594,8 +592,10 @@ iframe {
         margin-left: 40px; 
     }
     /* head end*/
-    #s1 .course { 
-        flex-direction: column;
+    #s1 p, #s1 .course { 
+        flex-direction: column; 
+        font-size: 25px; 
+        margin-left: 10px;
     }
     #s1 img { 
         height: 30vh; 
@@ -605,14 +605,16 @@ iframe {
     }  
     #s2 .para { 
         font-size: 25px;  
-        margin-left: 5%; 
+        margin-left: 10px; 
     }
     #s2 img { 
         height: 220px; 
         width: 350px; 
     }
     #s3 { 
-        flex-direction: column;
+        flex-direction: column; 
+        font-size: 25px;
+        margin-left: 10px;  
     } 
     #s3 img { 
         height: 121px; 
@@ -623,6 +625,8 @@ iframe {
 
     #s4 {
         flex-direction: column;
+        font-size: 25px; 
+        margin-left: 10px; 
     }
     /* about media*/
     #abouts3 { 
@@ -647,12 +651,34 @@ iframe {
         margin-top: 40px; 
     } 
     #abouts2 #op1 { 
-        grid-template-columns: auto;
-    } 
-    #abouts4, #abouts4 .abpic {
-        flex-direction: column; 
+        grid-template-columns: auto auto;
+        /* font-size: 20px;  */
+    }  
+    #abouts2 #op1 .op {
+        font-size: 15px;
+        height:135px; 
+        width: 135px;
+    }
+    #abouts4 {  
         height: 100%;
+    }  
+    #abouts4 .abpic {
+        /* flex-direction: column;  */
+        flex-wrap: wrap; /* Ensures wrapping on smaller screens */
     } 
+    #abouts4 .abpic .yo img { 
+        height: 100px; 
+        width: 100px;    
+        
+    }  
+    #abouts4 .abpic .yo h4, #abouts4 .abpic .yo i { 
+        font-size: 15px;
+    }
+    #abouts4 .abpic .yo {
+        width: 48%; /* Keeps 2 images per row */ 
+        margin: 3% 0%;
+    }
+
     /* #abouts5 { 
         height: 30vh; 
         margin-bottom: 0px;
@@ -684,14 +710,17 @@ iframe {
         font-size: 14px; 
         padding: 0px 15px;
     } 
-    #books2 { 
-        height: 100%;  
+    #books2, #books2 p { 
+        height: 40vh;
+        font-size: 20px;
     }
-
+    
     #books2 #bk {
-        height: 180px; 
-        width: 250px; 
-        animation: hope 8s ease infinite; 
+        height: 200px; 
+        width: 270px; 
+        margin-top: 0px;
+        animation: hope 8s ease infinite;
+        position: absolute; 
     }  
     @keyframes hope { 
         0%{
@@ -718,11 +747,17 @@ iframe {
         }
     }
 
-
-    #books3 #bk { 
-        height: 120%; 
+    #books3 #event .org {  
+        width: 350px; 
+        height: 250px; 
+        font-size: 20px; 
+        padding: 20px; 
+        
     } 
-
+    #books3 #event { 
+        margin: 0px; 
+        gap: 0%; 
+    }
     #contacts1 { 
         height: 100%; 
     } 
