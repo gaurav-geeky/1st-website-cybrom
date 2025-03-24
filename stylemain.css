@@ -119,7 +119,7 @@
 }
 
 #s1 .course .sub {
-    border: 3px solid blue;
+    border: 2px solid blue;
     border-radius: 50%;
     padding: 15px;
 }
@@ -613,7 +613,7 @@ iframe {
         flex-direction: column;
     }  
     #s2 .para { 
-        font-size: 25px;  
+        font-size: 20px;  
         margin-left: 10px; 
     }
     #s2 img { 
@@ -634,7 +634,7 @@ iframe {
 
     #s4 {
         flex-direction: column;
-        font-size: 25px; 
+        font-size: 20px; 
         margin-left: 10px; 
     }
     /* about media*/
