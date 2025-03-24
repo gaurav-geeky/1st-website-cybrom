@@ -258,7 +258,8 @@
     font-size: 30px; 
     background: lightblue; 
 }
-#books3 h5 { 
+#books3 h4 {  
+    color: red; 
     text-align: center; 
     margin: 20px 0px;   
     animation: event 5s infinite;  
@@ -390,6 +391,12 @@ iframe {
 }
 
 /* about us para 1 end     about us para 2 start  */
+#abouts2 {
+    background: lightcyan; 
+    font-size: 25px; 
+    margin: 20px 0px; 
+    width: 100%;
+}
 #abouts2 p { 
     text-align: center; 
     font-family: papyrus;
@@ -397,7 +404,7 @@ iframe {
     color: darkcyan;  
     font-size: 40px; 
     padding-bottom: 10px; 
-}
+} 
 #abouts2 #op1  {     
     display: grid; 
     grid-template-columns: auto auto auto; 
@@ -413,11 +420,7 @@ iframe {
     padding: 2px; 
     text-align: center; 
 }
-#abouts2 {
-    background: lightcyan; 
-    font-size: 25px; 
-    padding: 40px;
-}
+
 #abouts2 h4 { 
     text-decoration: sienna underline; 
 } 
@@ -667,6 +670,9 @@ iframe {
         font-size: 15px;
         height:135px; 
         width: 135px;
+    } 
+    #abouts2 #op1 .op i { 
+
     }
     #abouts4 {  
         height: 100%;
@@ -758,6 +764,10 @@ iframe {
 
     #books3 { 
         height: 50vh; 
+    }
+    #books3 h4 { 
+        font-size: 25px;  
+ 
     }
     #books3 #event .org {  
         width: 300px; 
