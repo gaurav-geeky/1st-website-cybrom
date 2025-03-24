@@ -48,7 +48,7 @@
     transition: transform 3s ease-out; 
 } 
 #head nav ul li:hover { 
-    transform: scale(1.4); 
+    transform: scale(1.2); 
    
 }
 #head nav ul li a {
@@ -110,9 +110,8 @@
 
 #s1 p {
     color: blue;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+    font-size: 40px;
+    text-align: center;
     font-family: monospace;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -126,7 +125,7 @@
 }
 
 #s1 .course {
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,18 +302,23 @@
 
 /* book style end   contact start  */
 
-#contacts1 {
-    text-align: center;
-    background: rgb(172, 234, 172);
-    padding: 10px 0px;
-    font-size: 20px;
-    margin: 40px 0px;  
+#contacts1 { 
     width: 100%; 
-    height: 25vh; 
+    margin: 30px 0px; 
+    background: rgb(172, 234, 172);
+    height: 28vh;  
 }
-
-#contacts1 h1 {
-    font-family: "Lucida Console";
+#contacts1 #cons1 {
+    display: grid;
+    padding: 25px 0px; 
+    align-items: center;
+    justify-content: center; 
+    font-size: 17px;
+} 
+#contacts1 #cons1 h1  { 
+    font-family: papyrus; 
+    letter-spacing: 2px; 
+    color: rgb(233, 98, 98);
 }
 
 iframe {
@@ -551,25 +555,15 @@ iframe {
 @media(max-width: 430px) { 
     #head { 
         display: none; 
-    }
-    #head #logo { 
-        /* display: none;  */
     } 
+    
     #head nav ul { 
         flex-direction: column;
-    
     }
-
-    #head .tele { 
-        /* display: none;  */            /*  to show it    apply nothing  here   so commented out  */
-    }
-    #head .icon { 
-        /* display: none;  */
-    } 
     #foot { 
         height: 14vh;
-    }
-
+    } 
+    
     /* bar and checkbox */ 
     #check:checked~#head  { 
         display: flex; 
@@ -592,11 +586,26 @@ iframe {
         margin-left: 40px; 
     }
     /* head end*/
-    #s1 p, #s1 .course { 
-        flex-direction: column; 
-        font-size: 25px; 
-        margin-left: 10px;
+    #s1 p {
+        font-size: 22px; 
+        margin-bottom: 0px;
     }
+
+    #s1 .course { 
+        flex-wrap: wrap;  
+        margin-left: 10px; 
+        gap: 10px; 
+        justify-content: center;
+        align-items: center;
+    } 
+    #s1 .course .sub { 
+        padding: 10px; 
+        color: red; 
+        font-size: 25px; 
+        width: 48%; 
+        text-align: center; 
+    } 
+    
     #s1 img { 
         height: 30vh; 
     }
@@ -747,19 +756,28 @@ iframe {
         }
     }
 
+    #books3 { 
+        height: 50vh; 
+    }
     #books3 #event .org {  
-        width: 350px; 
-        height: 250px; 
+        width: 300px; 
+        height: 190px; 
         font-size: 20px; 
-        padding: 20px; 
+        padding: 13px; 
         
     } 
     #books3 #event { 
         margin: 0px; 
-        gap: 0%; 
+        gap: 0%;  
     }
-    #contacts1 { 
+    #contacts1 {  
         height: 100%; 
+        margin: 15px 0px; 
+        height: 20vh;  
+    }
+    #contacts1 #cons1 {
+        padding: 15px 0px;  
+        font-size: 10px;
     } 
     #formcon { 
         height: 100%; 
