@@ -672,11 +672,12 @@ iframe {
     }  
     #abouts2 #op1 .op {
         font-size: 15px;
-        height:135px; 
-        width: 135px;
+        height:140px; 
+        width: 140px;
     } 
     #abouts2 #op1 .op i { 
-        font-size: 14px;
+        font-size: 14px; 
+        
     }
     #abouts4 {  
         height: 100%;
