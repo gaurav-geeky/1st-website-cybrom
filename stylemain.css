@@ -394,8 +394,9 @@ iframe {
 #abouts2 {
     background: lightcyan; 
     font-size: 25px; 
+    padding: 10px 0px;
     margin: 20px 0px; 
-    width: 100%;
+    width: 100%; 
 }
 #abouts2 p { 
     text-align: center; 
@@ -661,7 +662,10 @@ iframe {
         height: 40vh; 
         font-size: 15px; 
         margin-top: 40px; 
-    } 
+    }  
+    #abouts2 { 
+        height: 85vh;
+    }
     #abouts2 #op1 { 
         grid-template-columns: auto auto;
         /* font-size: 20px;  */
@@ -672,7 +676,7 @@ iframe {
         width: 135px;
     } 
     #abouts2 #op1 .op i { 
-
+        font-size: 14px;
     }
     #abouts4 {  
         height: 100%;
