@@ -599,9 +599,9 @@ iframe {
         align-items: center;
     } 
     #s1 .course .sub { 
-        padding: 10px; 
+        padding: 10px 20px; 
         color: red; 
-        font-size: 25px; 
+        font-size: 20px; 
         width: 48%; 
         text-align: center; 
     } 
