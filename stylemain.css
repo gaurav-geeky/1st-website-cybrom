@@ -310,14 +310,13 @@
     text-align: center;
     background: rgb(150, 233, 150);
     font-size: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 /* books4 start */
 #books4 {
     width: 100%;
     height: 68vh;
     background: radial-gradient(rgb(222, 222, 118) 20%, rgb(240, 186, 86) 80%);
-    padding: 0px 70px; 
 }
 
 #books4 h3 {
@@ -325,13 +324,14 @@
     text-align: center; 
     letter-spacing: 5px;
     word-spacing: 10px;
-    color: red; 
+    color: blue; 
+    font-family: papyrus;
 }
 #books4 #ak {
     display: flex;
     align-items: center;
-    justify-content:space-between; 
-    
+    justify-content:space-evenly; 
+    gap: 10%;
 }
 #ak .alb { 
     font-size: 20px; 
@@ -341,6 +341,7 @@
  #ak .alb p { 
     text-align: center; 
     padding: 0px 20%; 
+    margin: 10px 0px; 
  }
 
 /* book style end   contact start  */
@@ -897,11 +898,14 @@ h2 {
     }
 
     #books4 { 
-        height: 160vh;
+        height: 145vh;
     } 
-
     #books4 #ak { 
         flex-direction: column;
+    } 
+    #books4 h3 { 
+        font-size: 20px; 
+
     }
     #contacts1 {
         height: 100%;
