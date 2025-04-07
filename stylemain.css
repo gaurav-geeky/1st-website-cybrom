@@ -895,11 +895,11 @@ h2 {
     }
 
     #formcon {
-        height: 100%;
-        flex-direction: column;  
+        height: 100%;    
     } 
-    
-
+    #formcon .inform { 
+        flex-direction: column; 
+    }
     #formcon img {
         height: 155px;
         width: 225px;
