@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
-</head>
-<link rel="stylesheet" href="stylemain.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylemain.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="new/webicon.png">
+</head>
+
 
 <body>
 
@@ -53,14 +57,14 @@
                 </div>
                 <div id="cp2">
                     <h1>Timing</h1>
-                    <p>Monday to Friday : 10:00 a.m. to 5:00 p.m. <br> weekends will be holiday. 
+                    <p>Monday to Friday : 10:00 a.m. to 5:00 p.m. <br> weekends will be holiday.
                     </p>
                 </div>
             </div>
         </section>
 
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.284614481445!2d77.43031987454667!3d23.232727908454542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c435605f269e1%3A0xe67446598d15ad0e!2sCybrom%20Technology%20Pvt.%20Ltd %20-%20Python%2C%20Data%20Science%2C%20Cyber%20Security%2C%20AI%20%26%20Web%20Development%20Courses%20%26%20Training%20in%20Bhopal!5e0!3m2!1sen!2sin!4v1741322907106!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.284614481445!2d77.43031987454667!3d23.232727908454542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c435605f269e1%3A0xe67446598d15ad0e!2sCybrom%20Technology%20Pvt.%20Ltd%20-%20Python%2C%20Data%20Science%2C%20Cyber%20Security%2C%20AI%20%26%20Web%20Development%20Courses%20%26%20Training%20in%20Bhopal!5e0!3m2!1sen!2sin!4v1741322907106!5m2!1sen!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
@@ -68,22 +72,85 @@
         <section id="formcon">
             <img src="study.jpg" height="250px" width="360px">
 
-            <form>
-                <input class="edu" type="text" placeholder="Enter your name" required> <br> <br>
-                <input class="edu" type="email" placeholder="enter Email" required> <br> <br>
-                <input class="edu" type="text" placeholder=" Your subject" required> <br> <br>
+            <fieldset>
+                <legend>Addmission Form</legend>
+                <form action="https://api.web3forms.com/submit" method="POST">
 
-                <p class="edu">Select your batch timing</p>
-                <select class="edu">
-                    <option value="select" disabled selected>select</option>
-                    <option value="morning">Morning </option>
-                    <option value="afternon"> Afternoon </option>
-                    <option value="evening"> Evening</option>
-                </select>
-                <br> <br>
-                <!-- <submit class="edu" type="submit">Submit</submit> -->
-                <input class="edu" type="submit">
-            </form>
+                    <input type="hidden" name="access_key" value="ece50ec7-ee71-4a4f-9cdb-56f2adfcaebf">
+                    <input class="edu" name="name" type="text" placeholder="Enter your name" required> <br> <br>
+                    <input class="edu" name="email" type="email" placeholder="enter Email" required> <br> <br>
+                    <input class="edu" name="subject" type="text" placeholder=" Your subject" required> <br> <br>
+
+                    <p class="edu">Select your batch timing</p>
+                    <select class="edu" name="Time">
+                        <option value="select" disabled selected>select</option>
+                        <option value="morning">Morning </option>
+                        <option value="afternon"> Afternoon </option>
+                        <option value="evening"> Evening</option>
+                    </select>
+                    <br> <br>
+                    <!-- <submit class="edu" type="submit">Submit</submit> -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input class="edu" type="submit">
+                </form>
+            </fieldset>
+        </section> 
+
+        <section id="contain"> 
+            
+            <article id="slider" >
+                <div class="slide-img">
+                    <img src="new/67e628294121c_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628626b5b1_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e62878c1360_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628849f72b_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e6289013576_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e6289ae2d77_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628a577f19_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628c2f07f8_download.jpg" alt="p">
+                </div>
+
+
+                <div class="slide-img">
+                    <img src="new/67e628294121c_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628626b5b1_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e62878c1360_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628849f72b_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e6289013576_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e6289ae2d77_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628a577f19_download.jpg" alt="p">
+                </div>
+                <div class="slide-img">
+                    <img src="new/67e628c2f07f8_download.jpg" alt="p">
+                </div>
+
+            </article>
         </section>
 
         <section id="contacts2">
